@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dubai Mall Digideck</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main id="deck" class="deck" aria-live="polite">
+      <section class="slide active intro-slide" data-slide="intro" aria-label="Dubai Mall intro video">
+        <video class="deck-video" autoplay muted loop playsinline poster="https://www.youtube.com/watch?v=fz7Qi2W0aPk">
+          <source src="https://videos.pexels.com/video-files/3209828/3209828-uhd_2560_1440_25fps.mp4" type="video/mp4">
+        </video>
+        <div class="shade"></div>
+        <button class="sound-toggle" type="button" data-sound>Sound Off</button>
+        <div class="intro-enter">
+          <button class="enter-button" type="button" data-go="welcome">Enter</button>
+        </div>
+      </section>
+
+      <section class="slide welcome-slide" data-slide="welcome" aria-label="Dubai Mall welcome video">
+        <video class="deck-video" autoplay muted loop playsinline poster="https://www.youtube.com/watch?v=fz7Qi2W0aPk">
+          <source src="https://videos.pexels.com/video-files/4174135/4174135-uhd_2560_1440_30fps.mp4" type="video/mp4">
+        </video>
+        <div class="shade menu-shade"></div>
+        <button class="menu-toggle" type="button" data-toggle-menu>Menu</button>
+        <div class="top-rule"></div>
+        <div class="welcome-title">
+          <p>Dubai Mall</p>
+          <h1>Where the city comes indoors.</h1>
+        </div>
+        <button class="deck-cta" type="button" data-go="menu">Explore</button>
+        <nav class="overlay-menu" data-menu aria-label="Deck menu">
+          <button type="button" data-go="fashion">Fashion Avenue</button>
+          <button type="button" data-go="aquarium">Aquarium</button>
+          <button type="button" data-go="dining">Dining</button>
+          <button type="button" data-go="fountain">Fountain Finale</button>
+        </nav>
+      </section>
+
+      <section class="slide menu-slide" data-slide="menu" aria-label="Dubai Mall chapter menu">
+        <div class="menu-bg"></div>
+        <div class="menu-gradient"></div>
+        <button class="menu-toggle light" type="button" data-go="welcome">Video</button>
+        <div class="top-rule light-rule"></div>
+        <div class="menu-heading">
+          <p>Main Menu</p>
+          <h2>Choose Your Dubai Mall Chapter</h2>
+        </div>
+        <div class="chapter-grid">
+          <button class="chapter-card" type="button" data-go="fashion">
+            <span class="chapter-image fashion"></span>
+            <span class="chapter-copy"><b>Fashion Avenue</b><small>Luxury boutiques and polished retail rooms.</small></span>
+          </button>
+          <button class="chapter-card" type="button" data-go="aquarium">
+            <span class="chapter-image aquarium"></span>
+            <span class="chapter-copy"><b>Dubai Aquarium</b><small>A cinematic family stop at the center of the mall.</small></span>
+          </button>
+          <button class="chapter-card" type="button" data-go="dining">
+            <span class="chapter-image dining"></span>
+            <span class="chapter-copy"><b>Dining Districts</b><small>Cafes, terraces, and global kitchens for every pace.</small></span>
+          </button>
+          <button class="chapter-card" type="button" data-go="fountain">
+            <span class="chapter-image fountain"></span>
+            <span class="chapter-copy"><b>Fountain Finale</b><small>The evening view outside by Burj Khalifa Lake.</small></span>
+          </button>
+        </div>
+      </section>
+
+      <section class="slide chapter-slide fashion-slide" data-slide="fashion" aria-label="Fashion Avenue">
+        <div class="chapter-shade"></div>
+        <button class="arrow arrow-prev" type="button" data-go="menu" aria-label="Previous slide"></button>
+        <button class="arrow arrow-next" type="button" data-go="aquarium" aria-label="Next slide"></button>
+        <button class="menu-toggle light" type="button" data-go="menu">Menu</button>
+        <article class="chapter-panel">
+          <p>Luxury Retail</p>
+          <h2>Fashion Avenue</h2>
+          <span>A refined path through flagship boutiques, watches, jewelry, and personal shopping.</span>
+        </article>
+      </section>
+
+      <section class="slide chapter-slide aquarium-slide" data-slide="aquarium" aria-label="Dubai Aquarium">
+        <div class="chapter-shade"></div>
+        <button class="arrow arrow-prev" type="button" data-go="fashion" aria-label="Previous slide"></button>
+        <button class="arrow arrow-next" type="button" data-go="dining" aria-label="Next slide"></button>
+        <button class="menu-toggle light" type="button" data-go="menu">Menu</button>
+        <article class="chapter-panel">
+          <p>Icon Experience</p>
+          <h2>Dubai Aquarium</h2>
+          <span>An underwater pause that makes the mall feel like an attraction, not only a retail destination.</span>
+        </article>
+      </section>
+
+      <section class="slide chapter-slide dining-slide" data-slide="dining" aria-label="Dining Districts">
+        <div class="chapter-shade"></div>
+        <button class="arrow arrow-prev" type="button" data-go="aquarium" aria-label="Previous slide"></button>
+        <button class="arrow arrow-next" type="button" data-go="fountain" aria-label="Next slide"></button>
+        <button class="menu-toggle light" type="button" data-go="menu">Menu</button>
+        <article class="chapter-panel">
+          <p>Global Tables</p>
+          <h2>Dining Districts</h2>
+          <span>Move from quick coffee to terrace dinners, with the fountain and skyline never far away.</span>
+        </article>
+      </section>
+
+      <section class="slide chapter-slide fountain-slide" data-slide="fountain" aria-label="Fountain Finale">
+        <div class="chapter-shade"></div>
+        <button class="arrow arrow-prev" type="button" data-go="dining" aria-label="Previous slide"></button>
+        <button class="arrow arrow-next" type="button" data-go="menu" aria-label="Next slide"></button>
+        <button class="menu-toggle light" type="button" data-go="menu">Menu</button>
+        <article class="chapter-panel">
+          <p>Evening Finale</p>
+          <h2>Fountain View</h2>
+          <span>End the journey outside, where water, light, music, and the Burj Khalifa frame the last scene.</span>
+        </article>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
